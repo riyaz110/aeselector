@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BlackJack by Riyaz</title>
+    </head>
+    <body>
+        <div class="confetti-container">    
+            <h1>The Socratic Method</h1>
+            <h2 id="message-el">Is it your turn?</h2>
+            <div class="main-container">
+                <div class="flexbox-image-player">
+                    <h3 id="player-el">Player</h3>
+                    <!-- <p>Player Sum: <span id="player-sum-el"></span></p> -->
+                    <div id="image-div-el">
+                    <img id="default-card-el" src="images/cards/AH.png">
+                    </div>
+                </div>
+            </div>
+            <div id="game-buttons">
+            <button class="button" id="start-game-el" onclick="hidePlayerImages(); resetPlayer(); drawPlayerCard();">START GAME</button>
+            <!-- <button class="button" id="new-card-el" onclick="newCard()">NEW CARD</button>
+            <button class="button" id="stay-el" onclick="compareHands()">HOLD</button> -->
+            <button class="button" id="reset-all-el" onclick="clearAll()">CLEAR</button>
+            <p id="player-cards-el">Cards:</p>
+            <p id="dealer-cards-el">Cards:</p>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
